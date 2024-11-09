@@ -4,7 +4,6 @@ This is a FastAPI application that uses a machine learning model to predict the 
 
 ## Project Setup
 
-Note: The model (.joblib) has been compressed in order to push it to GitHub decompress the model and make sure it exists in the same directory as the code and dockerfile.
 
 ### 1. Docker Setup
 
@@ -34,6 +33,8 @@ To run this project using Docker:
   # -d detaches the container to use the terminal afterwards and -p is done for port binding
 
 - Access the API at `http://localhost:8000`.
+
+  Note: The model (.joblib) has been compressed in order to push it to GitHub decompress the model and make sure it exists in the same directory as the code and dockerfile.
 
 ### 2. Local Setup (Without Docker)
 
