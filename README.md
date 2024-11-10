@@ -34,7 +34,7 @@ To run this project using Docker:
 
 - Access the API at `http://localhost:8000`.
 
-  Note: Due to file size limitations on GitHub, the model file isn't included here. Pulling the pre-built Docker image (docker pull yskaa/diamond_price_predictor:1.0) is the recommended setup method for ease of use, as it avoids the need for the model file. For those who prefer building the image manually, the model file will need to be placed in the directory after downloading from an alternative source (link coming soon).
+Note: Due to file size limitations on GitHub, the model file isn't included here. Pulling the pre-built Docker image (docker pull yskaa/diamond_price_predictor:1.0) is the recommended setup method for ease of use, as it avoids the need for the model file. For those who prefer building the image manually, the model file will need to be placed in the directory after obtaining it from an alternative source.
 
 ### 2. Local Setup (Without Docker)
 
