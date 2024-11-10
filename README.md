@@ -9,13 +9,13 @@ This is a FastAPI application that uses a machine learning model to predict the 
 
 To run this project using Docker:
 
-- Pull the Docker image (optional, if you want to start from a pre-built image):
+- Pull the Docker image (Starting from a pre-built image):
   ```bash
-  docker pull yskaa/diamond_price_predictor
+  docker pull yskaa/diamond_price_predictor:1.0
   ```
 
-  OR
-
+  OR (the model (.joblib) file would be needed but as Github has a restriction in size an example has been provided below)
+  
 - Build the Docker image from the Dockerfile:
   ```bash
   docker build -t diamond_price_predictor .
@@ -34,7 +34,7 @@ To run this project using Docker:
 
 - Access the API at `http://localhost:8000`.
 
-  Note: The model (.joblib) has been compressed in order to push it to GitHub decompress the model and make sure it exists in the same directory as the code and dockerfile.
+  Note: Due to file size limitations on GitHub, the model file isn't included here. Pulling the pre-built Docker image (docker pull yskaa/diamond_price_predictor:1.0) is the recommended setup method for ease of use, as it avoids the need for the model file. For those who prefer building the image manually, the model file will need to be placed in the directory after downloading from an alternative source (link coming soon).
 
 ### 2. Local Setup (Without Docker)
 
@@ -49,7 +49,7 @@ If you want to run the application locally (without Docker):
   ```bash
   uvicorn Fast-API_Model_Usage.py:app --host 0.0.0.0 --port 8000
   ```
-  Or simply run the code in any IDE of choice. 
+  Or simply run the code in any IDE of choice after installing all necessary libraries. 
 
 - Access the API at `http://localhost:8000`.
 
