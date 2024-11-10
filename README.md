@@ -14,7 +14,7 @@ To run this project using Docker:
   docker pull yskaa/diamond_price_predictor:1.0
   ```
 
-  OR (the model (.joblib) file would be needed but as Github has a restriction in size an example has been provided below)
+  OR
   
 - Build the Docker image from the Dockerfile:
   ```bash
